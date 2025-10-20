@@ -4,13 +4,13 @@ import Shape.*
 
 object height:
     def apply(s: Shape): Int = s match
-        case Rectangle(_, height) =>
+        case Rectangle(_, _) =>
         1
         
         case Location(_, _, shape) =>
         1 + apply(shape)
         
-        case Ellipse(_, ry) =>
+        case Ellipse(_, _) =>
         1
         
         case Group(shapes*) =>
