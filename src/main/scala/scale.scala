@@ -14,6 +14,6 @@ object scale:
             Ellipse((rx * factor).toInt, (ry * factor).toInt)
         
         case Group(shapes*) =>
-            Group(shapes.map(apply(factor))*)
+            Group(shapes.map(apply(_, factor))*)
         
 end scale
