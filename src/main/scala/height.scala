@@ -5,16 +5,16 @@ import Shape.*
 object height:
     def apply(s: Shape): Int = s match
         case Rectangle(_, _) =>
-        1
+            1
         
         case Location(_, _, shape) =>
-        1 + apply(shape)
+            1 + apply(shape)
         
         case Ellipse(_, _) =>
-        1
+            1
         
         case Group(shapes*) =>
-        if shapes.isEmpty then 1
-        else 1 + shapes.map(apply).max
+            if shapes.isEmpty then 1
+            else 1 + shapes.map(apply).max
         
     end height
