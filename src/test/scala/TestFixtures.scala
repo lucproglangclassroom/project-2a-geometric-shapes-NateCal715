@@ -6,13 +6,13 @@ object TestFixtures:
 
   // TODO comment these fixtures back in after adding the required case classes
 
-  //  val simpleEllipse = Ellipse(50, 30)
+  val simpleEllipse = Ellipse(50, 30)
 
   val simpleRectangle = Rectangle(80, 120)
 
   val simpleLocation = Location(70, 30, Rectangle(80, 120))
 
-  //  val basicGroup = Group(Ellipse(50, 30), Rectangle(20, 40))
+  val basicGroup = Group(Ellipse(50, 30), Rectangle(20, 40))
   //
   //  val simpleGroup = Group(
   //    Location(200, 100, Ellipse(50, 30)),
