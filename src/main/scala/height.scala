@@ -17,4 +17,4 @@ object height:
             if shapes.isEmpty then 1
             else 1 + shapes.map(apply).max
         
-    end height
+end height

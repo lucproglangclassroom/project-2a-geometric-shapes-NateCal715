@@ -16,4 +16,4 @@ object scale:
         case Group(shapes*) =>
             Group(shapes.map(apply(factor))*)
         
-    end scale
+end scale
