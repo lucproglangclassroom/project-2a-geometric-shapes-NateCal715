@@ -11,7 +11,7 @@ object size:
       apply(shape)
     
     case Ellipse(_, _) =>
-      Math.PI.toInt * rx * ry
+      1
     
     case Group(shapes*) =>
       shapes.map(apply).sum
